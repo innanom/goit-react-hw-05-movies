@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
+import {getTrendingMovies} from "../services/fetchMovies"
 
 const Home = () => {
+    const [trendingMovies, setTrendingMovies] = useState('');
+
+    useEffect(() => {
+        setTrendingMovies(getTrendingMovies(), [trendingMovies]);
+        console.log(trendingMovies);
+    })
     return (
         <div>
-            <h1>Home</h1> 
+            <h1>Trending today</h1> 
+            <ul>
+
+            </ul>
             
         </div>
         

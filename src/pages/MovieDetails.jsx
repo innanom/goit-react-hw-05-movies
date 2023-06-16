@@ -5,12 +5,13 @@ const MovieDetails = () => {
 
     return (
         <div>
+            <h2>Additional in information</h2>
             <ul>
                 <li>
-                    <Link to="cast"></Link>
+                    <Link to="cast">Cast</Link>
                 </li>
                 <li>
-                    <Link to="reviews"></Link>
+                    <Link to="reviews">Reviews</Link>
                 </li>
             </ul>
             <Outlet />
