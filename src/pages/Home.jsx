@@ -5,9 +5,9 @@ const Home = () => {
     const [trendingMovies, setTrendingMovies] = useState('');
 
     useEffect(() => {
-        setTrendingMovies(getTrendingMovies(), [trendingMovies]);
-        console.log(trendingMovies);
-    })
+        getTrendingMovies().then(res=>setTrendingMovies(res))
+       
+    }, [])
     return (
         <div>
             <h1>Trending today</h1> 
