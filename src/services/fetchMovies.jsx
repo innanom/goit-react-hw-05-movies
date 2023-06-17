@@ -16,7 +16,7 @@ export const getTrendingMovies = async () => {
     return error.message;
   }
 }
-console.log(getTrendingMovies());
+// console.log(getTrendingMovies());
 
 // export const searchMovies = async query => {
 //   try {
@@ -32,18 +32,18 @@ console.log(getTrendingMovies());
 // console.log(searchMovies());
 
 
-// export const getMovieDetails = async movie_id => {
-//   try {
-//     const { data } = await request.get(`/movie/${movie_id}`, {
-//       params: {language: 'en-US' },
-//     }
-//     );
-//     return data;
+export const getMovieDetails = async movie_id => {
+  try {
+    const { data } = await request.get(`/movie/${movie_id}`, {
+      params: {language: 'en-US' },
+    }
+    );
+    return data;
    
-//   } catch (error) {
-//     return error.message;
-//   }
-// }
+  } catch (error) {
+    return error.message;
+  }
+}
 // console.log(getMovieDetails());
 
 // export const getMovieCredits = async movie_id => {
