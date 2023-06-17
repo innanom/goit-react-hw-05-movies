@@ -12,10 +12,7 @@ const Reviews = () => {
         getMovieReviews(movieId).then(response => setReviews(response));
     }, [movieId]);
 
-    console.log(reviews);
-
     return (
-       
         (reviews.length > 0) ? (
                  <ul>
                     {reviews.map(({ id, author, content }) => (
@@ -27,7 +24,6 @@ const Reviews = () => {
                 </ul>
                    
             ) : ( <p>We don't have any reviews for this movie</p> )
-        
     )
 };
 export default Reviews;

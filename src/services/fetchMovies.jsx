@@ -43,7 +43,6 @@ export const getMovieDetails = async movie_id => {
     return error.message;
   }
 }
-// console.log(getMovieDetails());
 
 export const getMovieCredits = async movie_id => {
   try {
@@ -56,7 +55,6 @@ export const getMovieCredits = async movie_id => {
     return error.message;
   }
 }
-// console.log(getMovieCredits());
 
 export const getMovieReviews = async movie_id => {
   try {
@@ -69,7 +67,7 @@ export const getMovieReviews = async movie_id => {
     return error.message;
   }
 }
-// console.log(getMovieReviews());
+
 
 
 

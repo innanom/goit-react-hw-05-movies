@@ -9,7 +9,6 @@ const Home = () => {
         getTrendingMovies().then(response => setTrendingMovies(response));
     }, [])
 
-
     return (
         <div>
             <h1>Trending today</h1> 
