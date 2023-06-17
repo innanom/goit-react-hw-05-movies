@@ -16,7 +16,7 @@ export const getTrendingMovies = async () => {
     return error.message;
   }
 }
-// console.log(getTrendingMovies());
+console.log(getTrendingMovies());
 
 // export const searchMovies = async query => {
 //   try {
