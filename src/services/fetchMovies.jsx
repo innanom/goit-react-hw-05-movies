@@ -45,30 +45,30 @@ export const getMovieDetails = async movie_id => {
 }
 // console.log(getMovieDetails());
 
-// export const getMovieCredits = async movie_id => {
-//   try {
-//     const { data } = await request.get(`movie/${movie_id}/credits`, {
-//       params: { language: 'en-US'}
-//     });
-//     return data.cast;
+export const getMovieCredits = async movie_id => {
+  try {
+    const { data } = await request.get(`movie/${movie_id}/credits`, {
+      params: { language: 'en-US'}
+    });
+    return data.cast;
    
-//   } catch (error) {
-//     return error.message;
-//   }
-// }
+  } catch (error) {
+    return error.message;
+  }
+}
 // console.log(getMovieCredits());
 
-// export const getMovieReviews = async movie_id => {
-//   try {
-//     const { data } = await request.get(`movie/${movie_id}/reviews`, {
-//       params: { language: 'en-US'}
-//     });
-//     return data.results;
+export const getMovieReviews = async movie_id => {
+  try {
+    const { data } = await request.get(`movie/${movie_id}/reviews`, {
+      params: { language: 'en-US'}
+    });
+    return data.results;
    
-//   } catch (error) {
-//     return error.message;
-//   }
-// }
+  } catch (error) {
+    return error.message;
+  }
+}
 // console.log(getMovieReviews());
 
 
