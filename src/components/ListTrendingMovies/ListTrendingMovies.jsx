@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const ListTrendingMovies = ({ array }) => {
     const location = useLocation();
@@ -18,10 +18,10 @@ const ListTrendingMovies = ({ array }) => {
 
 export default ListTrendingMovies;
 
-ListTrendingMovies.propTypes = {
-    array: PropTypes.arrayOf(
-        PropTypes.exact({
-            title: PropTypes.string,
-            id: PropTypes.number,
-        }))
-}
+// ListTrendingMovies.propTypes = {
+//     array: PropTypes.arrayOf(
+//         PropTypes.exact({
+//             title: PropTypes.string,
+//             id: PropTypes.number,
+//         }))
+// }

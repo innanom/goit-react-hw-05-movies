@@ -36,8 +36,7 @@ export const getMovieDetails = async movie_id => {
   try {
     const { data } = await request.get(`/movie/${movie_id}`, {
       params: {language: 'en-US' },
-    }
-    );
+    });
     return data;
    
   } catch (error) {
