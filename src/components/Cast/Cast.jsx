@@ -12,7 +12,8 @@ const Cast = () => {
     }, [movieId]);
    
     return (
-        <ul>
+        (cast.length > 0) ? (
+                 <ul>
             {cast.map(({id, profile_path, name, character}) => (
                 <li key={id}>
                     <img src={`https://image.tmdb.org/t/p/w500${profile_path}`} alt={name} />
@@ -20,7 +21,8 @@ const Cast = () => {
                     <p>Character: {character}</p>
                 </li>
             ))}
-        </ul>
+        </ul>                   
+            ) : ( <p>We don't have any cast for this movie</p> )
     )
 }
 
