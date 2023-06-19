@@ -1,6 +1,6 @@
 import { useState } from 'react';
-// import { toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import PropTypes from 'prop-types';
 
 const SearchMoviesForm = ({onSubmit}) =>  {
@@ -15,8 +15,8 @@ const SearchMoviesForm = ({onSubmit}) =>  {
     event.preventDefault();
 
       if (searchMovies.trim() === '') {
-        // toast.error("Enter data to search")
-          return
+        toast.error("Enter data to search")
+        return;
       }
 
     onSubmit(searchMovies);
