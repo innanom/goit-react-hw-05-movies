@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid black;
+
+  /* > nav {
+    display: flex;
+  } */
+}
+
+.header_list {
+  display: flex;
+  gap: 15px;
+}
+
+.header_item {
+   list-style: none;
+}
+
+.header_link {
+  &:hover {
+      background-color: orange;
+    }
+  
+    &:focus {
+      background-color: orange;
+      border-color: rgb(10, 10, 10);
+      box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+      outline: 0;
+    }
+
+    &.active {
+     color: yellowgreen;
+     border-radius: 10%;
+    }
+}
+  

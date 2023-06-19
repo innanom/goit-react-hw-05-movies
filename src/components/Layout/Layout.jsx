@@ -1,21 +1,22 @@
 import { Suspense } from "react";
 import { Link, Outlet } from "react-router-dom";
-import {Header} from "./Layout.styled.jsx"
+import css from "./Layout.module.css";
+
 
 
 const Layout = () => {
     return (
         <div>
-            <Header>
-                <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                    <   Link to="/movies">Movies</Link>
+            <header className={css.header}>
+                <ul className={css.header_list}>
+                    <li className={css.header_item}>
+                        <Link to="/" className={css.header_link}>Home</Link>
+                    </li >
+                    <li className={css.header_item}>
+                    <   Link to="/movies" className={css.header_link}>Movies</Link>
                     </li>
                 </ul>
-            </Header>
+            </header>
             <main>
                  <Suspense fallback={<p>Loading...</p>}>
                     <Outlet />
